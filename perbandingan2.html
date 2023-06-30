@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let foo;
+foo = 9 == '9';
+//console.log(foo);       // true
+document.write(foo);       // true
+document.write("<br>");      
+
+foo = 9 === '9';
+//console.log(foo);       // false
+document.write(foo);       // false
+document.write("<br>");      
+
+foo = true == 1;
+//console.log(foo);       // true
+document.write(foo);       // true
+document.write("<br>");      
+
+foo = true === 1;
+//console.log(foo);       // false
+document.write(foo);       // false
+document.write("<br>");      
+
+foo = false == 0;
+//console.log(foo);       // true
+document.write(foo);       // true
+document.write("<br>");      
+
+foo = false === 0;
+//console.log(foo);       // false
+document.write(foo);       // false
+
+    </script>
+</body>
+</html>

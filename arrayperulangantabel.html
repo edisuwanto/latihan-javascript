@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let provinsi = [
+    ["1.", "Nanggroe Aceh Darussalam", "Banda Aceh", 2002, "57.365"],
+    ["2.", "Sumatera Utara", "Medan",1956, "72.981"],
+    ["3.", "Sumatera Barat", "Padang",1957, "42.297"],
+    ["4.", "Riau", "Pekanbaru",1957, "94.560"],
+    ["5.", "Kepulauan Riau", "Tanjung Pinang",2002, "8.084"],
+];
+
+document.write("<table>");
+document.write("<tr>");
+document.write("<th>" + "Nomor" + "</th>");
+document.write("<th>" + "Nama Provinsi" + "</th>");
+document.write("<th>" + "Nama Ibu Kota" + "</th>");
+document.write("<th>" + "Tahun Diresmikan" + "</th>");
+document.write("<th>" + "Luas Wilayah/km2" + "</th>");
+document.write("</tr>");                    
+let jumlah_provinsi = provinsi.length;
+for (i = 0; i < jumlah_provinsi; i++) {
+    document.write("<tr>");
+    document.write("<td>");    
+    document.write(provinsi[i][0]);            
+    document.write("</td>");
+    document.write("<td>");
+    document.write(provinsi[i][1]);
+    document.write("</td>");
+    document.write("<td>");
+    document.write(provinsi[i][2]);
+    document.write("</td>");
+    document.write("<td>");
+    document.write(provinsi[i][3]);
+    document.write("</td>");
+    document.write("<td>");                
+    document.write(provinsi[i][4]);
+    document.write("</td>");
+    document.write("</tr>");        
+}
+    document.write("</table>");
+
+        </script>
+</body>
+</html>
